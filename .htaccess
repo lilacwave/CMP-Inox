@@ -1,7 +1,7 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.yoursite\.com [OR]
+RewriteCond %{HTTP_HOST} ^www\.cmpinox\.com.br [OR]
 RewriteCond %{REQUEST_URI} /index\.html$
-RewriteRule (.*?)(index\.html)?$ http://yoursite.com$1 [NE,R=301,L]
+RewriteRule (.*?)(index\.html)?$ http://cmpinox.com.br$1 [NE,R=301,L]
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
