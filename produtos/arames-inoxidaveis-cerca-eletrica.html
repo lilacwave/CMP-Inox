@@ -235,54 +235,68 @@
                     <div class="heading-style-h2 text-color-alternate text-align-center">Faça um orçamento</div>
                     <div class="spacer-medium"></div>
                     <p class="text-size-medium text-align-center text-style-muted text-color-alternate">Preencha o formulário com os materiais que procura, que em breve entraremos em contato.</p>
-                  </div><div class="spacer-large"></div>
+                  </div>
+                  <div class="spacer-large"></div>
                   <div id="contato" class="quotation_forms-wrapper w-form">
-                    <form method="post" name="wf-form-Formulario-de-Or-amento" data-name="Formulario de Orçamento" action="https://getform.io/f/vbmAZnbY" class="form quotation-form" data-wf-page-id="659c5e555f3012db4dfcaa25" data-wf-element-id="3aced090-4c98-925f-8e74-58dedc77ca1b">
+                    <form method="POST" data-name="Formulario de Orçamento" action="https://api.web3forms.com/submit" class="form quotation-form">
+                      
+                      <!-- Chave de acesso -->
+                      <input type="hidden" name="access_key" value="a4cca482-739c-42ae-9090-b13e0671ac94">
+
+                      <!-- Email personalizado -->
+                      <input type="hidden" name="replyto" value="mauricio@aczinox.com.br"/>
+
+                      <!-- Assunto do email -->
+                      <input type="hidden" name="subject" value="CMP Inox | Nova Cotação">
+
+                      <!-- Título do email -->
+                      <input type="hidden" name="from_name" value="CMP Inox">
+
                       <div class="name-div">
-                        <label for="Nome-4" id="name-label" class="field-label">Olá, meu </label>
-                        <input class="text-field w-input" maxlength="256" name="Nome" data-name="Nome" placeholder="nome completo é*" type="text" id="Nome-4" required=""/>
+                        <label for="nome" id="name-label" class="field-label">Olá, meu</label>
+                        <input class="text-field w-input" maxlength="256" name="Nome" data-name="Nome" placeholder="nome completo é*" type="text" id="nome" required>
                       </div>
                       <div class="empresa-div">
-                        <label for="Empresa-4" class="field-label">Trabalho na</label>
-                        <input class="text-field w-input" maxlength="256" name="Empresa" data-name="Empresa" placeholder="empresa*" type="text" id="Empresa-4"/>
+                        <label for="empresa" class="field-label">Trabalho na</label>
+                        <input class="text-field w-input" maxlength="256" name="Empresa" data-name="Empresa" placeholder="empresa*" type="text" id="empresa">
                       </div>
                       <div class="telefone-div">
-                        <label for="Telefone-4" class="field-label">Você pode me contatar por</label>
-                        <input class="text-field w-input" maxlength="256" name="Telefone" data-name="Telefone" placeholder="telefone*" type="tel" id="Telefone-4" required=""/>
+                        <label for="telefone" class="field-label">Você pode me contatar por</label>
+                        <input class="text-field w-input" maxlength="256" name="Telefone" data-name="Telefone" placeholder="telefone*" type="tel" id="telefone" required>
                       </div>
                       <div class="telefone-div">
-                        <div class="div-block-15">
-                          <label for="Email-3" class="field-label">ou</label>
-                          <input class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="neste e-mail*" type="email" id="Email-3" required=""/>
-                        </div>
+                        <label for="email" class="field-label">ou</label>
+                        <input class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="neste e-mail*" type="email" id="email" required>
                       </div>
                       <div class="massage-div">
                         <label for="Mensagem" class="field-label">Sua mensagem</label>
-                        <textarea id="Mensagem" name="Mensagem" maxlength="5000" data-name="Mensagem" placeholder="..." required="" class="text-field mensagem w-input"></textarea>
+                        <textarea id="Mensagem" name="Mensagem" maxlength="5000" data-name="Mensagem" placeholder="..." required class="text-field mensagem w-input"></textarea>
                       </div>
                       <div class="cta-wrapper">
                         <label class="w-checkbox checkbox-field">
-                          <input type="checkbox" name="Checkbox" id="Checkbox" data-name="Checkbox" required="" class="w-checkbox-input"/>
-                          <span class="radio-button-label w-form-label" for="Checkbox">Li e aceito os <span class="text-span-9">Termos de Uso</span> e <span class="text-span-10">Política de Privacidade</span>.</span></label><div class="recaptcha-wrapper">
-                            <div class="w-form-formrecaptcha recaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled g-recaptcha-invalid-key"></div>
-                          </div>
-                          <div class="spacer-large"></div>
-                          <div class="quotation-button-wrapper">
-                            <input type="submit" data-wait="Enviando..." class="forms-buttun w-button" value="Enviar mensagem"/>
-                          </div>
+                          <input type="checkbox" name="Checkbox" id="Checkbox" data-name="Checkbox" required class="w-checkbox-input">
+                          <span class="radio-button-label w-form-label" for="Checkbox">Li e aceito os <span class="text-span-9">Termos de Uso</span> e <span class="text-span-10">Política de Privacidade</span>.</span>
+                        </label>
+                        <div class="recaptcha-wrapper">
+                          <div class="w-form-formrecaptcha recaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled g-recaptcha-invalid-key"></div>
                         </div>
-                      </form>
-                      <div class="success-message w-form-done">
-                        <div> ✔ Obrigado por entrar em contato!</div>
+                        <div class="spacer-large"></div>
+                        <div class="quotation-button-wrapper">
+                          <input type="submit" data-wait="Enviando..." class="forms-buttun w-button" value="Enviar mensagem">
+                        </div>
                       </div>
-                      <div class="error-message w-form-fail">
-                        <div class="text-block">Ops! Algo deu errado em enviar seu formulario!</div>
-                      </div>
+                    </form>
+                    <div class="success-message w-form-done">
+                      <div> ✔ Obrigado por entrar em contato!</div>
+                    </div>
+                    <div class="error-message w-form-fail">
+                      <div class="text-block">Ops! Algo deu errado em enviar seu formulario!</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
         <!--==================== FOOTER ====================-->
         <div class="section-prodtem-footer">
