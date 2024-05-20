@@ -529,7 +529,7 @@ p {
   display: flex;
 }
 
-.massage-div {
+.message-div {
   padding-top: 5px;
 }
 
@@ -3509,7 +3509,7 @@ p {
     display: flex;
   }
 
-  .massage-div {
+  .message-div {
     flex-direction: column;
     justify-content: space-between;
     display: flex;
