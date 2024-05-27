@@ -996,7 +996,9 @@ p {
   display: flex;
 }
 
-.rich-text-prod {
+/* <!--==================== PRODUCT INFO ====================--> */
+
+.prod-richtext {
   width: 39rem;
   margin-top: 2rem;
   font-size: 1rem;
@@ -2618,8 +2620,8 @@ p {
   .proditem-wrapper {
     flex-direction: column;
   }
-
-  .rich-text-prod {
+  /* <!--==================== PRODUCT INFO MOBILE ====================--> */
+  .prod-richtext {
     width: auto;
     text-align: left;
   }
